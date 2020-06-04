@@ -1,0 +1,61 @@
+.navbar{background-color: #3b5998;
+    background-image: linear-gradient(#546886, #3b5998 50%)}
+.activeLink{color: white !important;text-decoration: none;}
+.face-logo,.search-input{float: left;margin-left: 2%;}
+.face-logo{width: 5%;}
+.face-logo img{width: 100%;}
+.search-input input{border:none;outline: none;}
+.search-input{
+    border: 1px solid black;
+    color: gray;
+    background-color: white;
+    width: 86%;
+}
+.fa-search{margin-left: 45%;}
+.icons ul li{float:left;list-style-type:none;margin-left: 4%;color: white !important;font-size: 15px;cursor: pointer;}
+.icons ul li img{    
+    height: 17px;
+    border-radius: 50%;
+}
+.icons{margin-bottom: -11px}
+.clear-fix{clear: both;}
+.fa-user,.fa-comment,.fa-bell,.fa-question-circle,.fa-caret-down{color:black;    font-size: 21px;}
+.pos{position: fixed;z-index:2}
+.hidden-list,
+.hidden-list-message,
+.hidden-list-question,
+.hidden-list-friends-request,
+.hidden-list-caret{
+    width: 26%;
+    position: fixed;
+    z-index: 22;
+    margin-left: -2%;
+    display:none;
+}
+.hidden-list-caret{width: 15%;}
+.hidden-list img,
+.hidden-list-question img,
+.hidden-list-friends-request img
+{height: 79% !important;width: 63%;}
+.hidden-list ul li,
+.hidden-list-message ul li,
+.hidden-list-question ul li,
+.hidden-list-friends-request ul li,
+.hidden-list-caret ul li{
+    float: none;
+    margin-left: -7%;
+    padding: 5%;
+    color:#3b5998 !important;
+    border-radius: 3px;
+    background-color: white;
+
+}
+::placeholder{padding-left:7%;}
+.activeLink{color:white !important;text-decoration: none;}
+.hidden-list-caret ul li a{color:#3b5998 !important;text-decoration: none;}
+.line{
+    background-color: rgb(243, 243, 243);
+    height: 1px;
+    margin-bottom: 26px;
+}
+span{font-size:12px}

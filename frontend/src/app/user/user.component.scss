@@ -1,0 +1,149 @@
+.cover,.user-profile-content{background-color: #e9ebee;width: 82%;}
+.cover-img{margin-left: 8%;height: 345px;}
+.cover-img img{height: 100%;width: 100%;}
+.fa-camera{
+    position: absolute;
+    top: 33px;
+    left: 6%;
+    font-size: 22px;
+}
+// .user-Name,.user-button{float: left;}
+.User-button{    
+    position: absolute;
+    top: 88%;
+    left: 65%;
+    width: 52%;
+}
+
+.Update-button{margin-right: 2%;}
+.User-button button,.buttons button{
+    border:none;
+    outline: none;
+    background-color:#e9ebee;
+    border-radius: 2px;
+}
+.clear-fix{clear:both}
+.user-Name{
+    position: absolute;
+    left: 27%;
+    top: 88%;
+    color: white;
+}
+.user-tap ul li{float: left;list-style-type: none;color: #3b5998;margin-left: 9%;}
+.user-tap{
+    background-color: white;
+    padding-top: 20px;
+    margin-left: 9.1%;
+    -webkit-box-flex: 0;
+    flex: 0 0 81%;
+    max-width: 84%;
+}
+.profile-img{
+    width: 20%;
+    position: absolute;
+    top: -181px;
+}
+.inputfile,.inputfile-cover{
+     /* top: 158px; */
+    /* left: -6%; */
+    background-color: transparent;
+    width: 183.1px;
+    height: 55.1px;
+    opacity: 0;
+    overflow: hidden;
+    z-index: -1;
+}
+
+
+.img-file,.cover-img-file{
+    top: 52%;
+    left: -2%;
+    position: absolute;
+    padding-left: 6%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    opacity: 0;
+    -webkit-transition: opacity 1s;
+    transition: opacity 1s;
+    border-radius: 57px;
+}
+.cover-img-file{
+    top: 3%;
+    left: 3%;
+    opacity: 0;
+    padding-top: 0px;
+    padding-left: 0px;
+    height: 1px;
+    border-radius: 5px;
+
+}
+.cover-img-file:hover{opacity: 1;}
+
+.img-file:hover {
+opacity:1;
+}
+.fa-camera{
+    margin-left: 40% !important;
+    z-index: 66666;
+}
+.cover-camera{    
+    margin-left: 5% !important;
+    z-index: 66666;
+    top: 8%;
+}
+.profile-img img{width: 100%;border-radius: 50%;border:3px solid white;}
+.create-post{border:1px solid rgb(221, 220, 220);margin-top: 23px;}
+.create-post h6{margin: 8px}
+.post{background-color: white;padding-left: 1%;height: 108px;}
+.intro{margin-left: 9%;}
+.posts-img,.posts-textarea{float: left;height: 108px;}
+.posts-img{width: 5%;height: 20px;margin-right: 2%;}
+.posts-img img{width: 100%;height:100%;border-radius: 50%;}
+.clear-fix{clear:both}
+.posts-textarea{width:90%}
+.posts-textarea textarea{width: 100%;border:none;outline: none;}
+.line{
+    background-color: #cecece;
+    height: 1px;
+    width: 100%;
+    margin-left: 0%;
+}
+.buttons{background-color: white;padding: 15px}
+.upload-photo,.tag-friends,.feelings{float: left;width: 33%;}
+.feelings img{width:5%;height: 15px;}
+.bio-details,.photos,.friend{background-color: white;margin-top: 24px;padding: 20px;}
+.bio,.details,.featured{margin-top: 20px;margin-bottom: 20px;}
+.bio button,.details button{
+    width: 98%;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    padding: 3px;
+    background-color: #e9ebee;
+}
+.fa-star-o{    
+    margin-left: 41%;
+    font-size: 26px;
+    border-radius: 50%;
+    border: 1px solid gray;
+    padding: 4px;
+}
+.photos-h6,.friend-h6{float: left;}
+.photos-span,.friend-span{float:right;font-size: 13px;color: #3b5998;}
+.show{display: none !important;}
+.postsCreatedpart2{background-color: white; padding: 16px; color: rgb(100, 100, 100);}
+.image-upload{    
+    width: 6%;
+    top: 30px;
+    left: 4%;
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    z-index: 66666666;
+}
+ .edit-bio{display: none;}
+.save{background-color: rgb(4, 4, 119) !important;outline: none;}

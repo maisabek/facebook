@@ -1,0 +1,16 @@
+.chatContent{
+    width: 22%;
+    bottom: 4px;
+    right: 18%;
+    z-index: 1000;
+}
+ul li{float: left}
+.message{padding: 120px !important;}
+.line{
+    background-color: rgb(230, 230, 230);
+    width: 100%;
+    height: 2px;
+}
+input{outline: none;}
+.show{display: none;}
+.fa-times{cursor: pointer;}

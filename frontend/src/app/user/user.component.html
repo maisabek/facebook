@@ -1,0 +1,144 @@
+<app-navbar></app-navbar>
+<app-dashboard></app-dashboard>
+<div class="cover">
+    <app-posts></app-posts>
+    <div class="container">
+        <div class="row">
+            <i class="fa fa-camera cover-camera text-light ml-5 mt-1" aria-hidden="true"></i>
+            <div class="cover-img col-md-10">
+                <img [src]="CoverImageUrl"><br>
+                <div class="cover-img-file bg-dark text-light">
+                <input type="file" (change)="onselectCoverImage($event)" class="inputfile-cover" value="choose">
+             <!-- <img src="assets/images/profile-img.jpg"> -->
+            </div>    
+             <div class="user-Name">
+             <h5>Mai Mohamed</h5></div>
+             <div class="User-button">
+             <button class="Update-button">Update Info</button>
+             <button><i class="fa fa-list-ul" aria-hidden="true"></i>
+                Activity Log</button>
+            </div>
+            </div>
+            <div class="user-tap col-md-9">
+                <ul>
+                    <li><a>Timeline <i class="fa fa-caret-down" aria-hidden="true"></i>
+                    </a></li>
+                    <li><a>About</a></li>
+                    <li><a>Friends</a></li>
+                    <li><a>Photo</a></li>
+                    <li><a><i class="fa fa-lock" aria-hidden="true"></i>
+                        Archive</a></li>
+                    <li><a>More <i class="fa fa-caret-down" aria-hidden="true"></i>
+                    </a></li>
+                    <div class="clear-fix"></div>
+                </ul>
+              <div class="profile-img">
+                <img [src]="url" height="200"><br>
+                <div class="img-file bg-dark text-light">
+                <input type="file" (change)="onselectFile($event)" class="inputfile" value="choose">
+                <i class="fa fa-camera text-light ml-5 mt-1" aria-hidden="true"></i>
+             <!-- <img src="assets/images/profile-img.jpg"> -->
+            </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="user-profile-content">
+    <div class="container">
+        <div class="row">
+            <div class="intro col-md-4">
+                <div class="bio-details">
+                    <div class="bio">
+                        <div class="edit-bio">
+                              <textarea></textarea>
+                              <button class="save text-light ">Save</button>
+                              <button class="cancel">Cancel</button><br>
+                        </div>
+                        <button class="edit-btn">Edit Bio</button>
+                    </div>
+                    <div class="line"></div>
+                    <div class="details">
+                        <button>Edit Details</button>
+                    </div>
+                    <div class="line"></div>
+                    <div class="featured">
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                        <p>Showcase what's important to you by adding photos, pages, groups and more to your featured section on your public profile</p>
+                    </div>
+                </div>
+                <div class="photos">
+                    <div class="photos-h6"><h6>Photos</h6></div>
+                    <div class="photos-span"><span>Add Photo</span></div>
+                <div class="clear-fix"></div>
+
+                </div>
+                <div class="friend">
+                    <div class="friend-h6"><h6>Friends</h6></div>
+                    <div class="friend-span"><span>Find Friend</span></div>
+                    <div class="clear-fix"></div>
+
+                </div>
+            </div>
+            <div class="posts col-md-6">
+                <div class="create-post">
+                    <h6>Create Post</h6>
+                    <div class="line"></div>
+                    <div class="post">
+                    <div class="posts-img">
+                    <img src="assets/images/profile-img.jpg">
+                </div>
+                <div class="posts-textarea" id="posts-textarea">
+                    <textarea placeholder="What's on your mind, Mai?"></textarea>
+                </div>
+                <div class="clear-fix"></div>
+            </div>
+            <div class="line"></div>
+            <div class="buttons">
+            <div class="upload-photo">
+               <button><i class="fa fa-picture-o" aria-hidden="true"></i>
+                photo/video </button>
+            </div>
+            <div class="tag-friends">
+                <button><i class="fa fa-user" aria-hidden="true"></i>
+                 Tag Friends </button>
+             </div>
+             <div class="feelings">
+                <button><img src="assets/images/emojis.png">
+                 Feeling/Activity </button>
+             </div>
+             <div class="clear-fix"></div>
+            </div>
+                </div>
+                <div class="allpost">
+                <div class=" bg-white d-flex mt-3 show" id="headerPost">
+                    <div class="postImage ml-2 mb-2 mt-2"><img class="border-pull" src="assets/images/01.jpg"></div>
+                    <div class="mt-2"><h6>mai mohamed</h6><span class="text-muted position-absolute">1min</span></div>
+                </div>
+                <div class="line3 show" id="line3"></div>
+              <div class="postsCreated" id="postsCreated"></div>
+              <div class="line line2 show" id="line2"></div>
+                <div class="postsCreatedpart2 d-flex show" id="postsCreatedpart2">
+                    <div class="ml-4">
+                        <i class="fa fa-thumbs-o-up" aria-hidden="true"></i> Like
+                    </div>
+                    <div class="ml-4 mr-5">
+                        <i class="fa fa-comment-o" aria-hidden="true"></i> Comment
+                    </div>
+                    <div class="">
+                        <i class="fa fa-share" aria-hidden="true"></i> Share
+                    </div>
+                </div>
+    
+            </div>
+        
+        </div>
+
+
+
+
+        </div>
+    </div>
+</div>
+<app-chat></app-chat>
+

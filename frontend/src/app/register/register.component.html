@@ -1,0 +1,163 @@
+<div class="login-part">
+    <div class="container">
+        <div class="row">
+        <div class="facebook-h2 col-md-1">
+        <h2>facebook</h2>
+        </div>
+        <div class="login col-md-6">
+          <form [formGroup]='contactsForm'>
+      <div class="form-group group1">
+          <label>Email or phone
+            </label><br>
+       <input type="text"  class="form-contol" [(ngModel)]='userName' formControlName="userEmail" required>
+     <!-- <div *ngIf="contactsForm.controls.userEmail.touched && contactsForm.controls.userEmail.errors != null" class="alert text-danger">UserEmail invalid</div> -->
+      </div>
+    
+    <div class="form-group group2">
+     <label>password</label><br>
+      <input type="password" class="form-contol" [(ngModel)]='password' formControlName="password" required>
+      <!-- <div *ngIf="contactsForm.controls.password.touched && contactsForm.controls.password.errors != null" class="alert text-danger">Password Must Start captail Latter</div> -->
+    
+     </div>
+     <div class="form-button">
+    <a><button type="submit" class="btn-btn-info" (click)='registeredUser()'>Log In</button></a>
+    </div>
+    <div class="clear-fix"></div>
+    </form>
+        </div>
+    </div>
+    </div>
+    </div>
+    
+    <div class="register-part">
+      <div class="container">
+        <div class="row">
+          <div class="recent-login col-md-4">
+           <h3>Recent logins</h3>
+           <p>Click your picture or add an account.</p>
+             <div class="add-account">
+              <!-- <i class="fa fa-plus-circle" aria-hidden="true"></i> -->
+              <i class="fa fa-plus" aria-hidden="true"></i>
+             </div>
+             <a><button>Add Account</button></a>
+          </div>
+          <div class="register col-md-6">
+            <h3>Create a new account</h3>
+            <p>It's quick and easy.</p>
+            <form [formGroup]='contactsForm'>
+              <div class="form-group group1">
+             <input type="text" placeholder="First name" formControlName="userEmail"  class="form-contol" [(ngModel)]='newuser.fname' required name="fname">
+           <!-- <div *ngIf="contactsForm.controls.userEmail.touched && contactsForm.controls.userEmail.errors != null" class="alert text-danger">UserEmail invalid</div> -->
+            </div>
+            <div class="form-group group2">
+           <input type="text"  placeholder="Surname" class="form-contol" formControlName="userEmail" [(ngModel)]='newuser.lname' required name="lname">
+         <!-- <div *ngIf="contactsForm.controls.userEmail.touched && contactsForm.controls.userEmail.errors != null" class="alert text-danger">UserEmail invalid</div> -->
+          </div>
+          <div class="clear-fix"></div>
+              <div class="form-group group3">
+               <input type="text" placeholder="Mobile number or phone number" formControlName="userEmail" class="form-contol" [(ngModel)]='newuser.email' required name="email">
+             <!-- <div *ngIf="contactsForm.controls.userEmail.touched && contactsForm.controls.userEmail.errors != null" class="alert text-danger">UserEmail invalid</div> -->
+              </div>
+            
+            <div class="form-group group4">
+              <input type="password" placeholder="password" class="form-contol" formControlName="password" [(ngModel)]='newuser.password' required name="password">
+              <!-- <div *ngIf="contactsForm.controls.password.touched && contactsForm.controls.password.errors != null" class="alert text-danger">Password Must Start captail Latter</div> -->       
+             </div>
+             <label class="birthday">Birthday</label><br>
+              <div class="form-group group5">
+                            
+                            <!-- <select class="form-control">
+                                <option selected formControlName="userEmail" [(ngModel)]='newuser.days' required name="days">days</option>
+                                 <option *ngFor="let i of days">{{i}}</option>
+                             </select> -->
+    
+                       <!-- <div *ngIf="contactsForm.controls.userEmail.touched && contactsForm.controls.userEmail.errors != null" class="alert text-danger">must <select name="" id=""></select></div> -->
+                        </div>
+                        <div class="form-group group6">
+                          <!-- <select class="form-control">
+                              <option selected  formControlName="userEmail" [(ngModel)]='newuser.mon' required name="mon">mon</option>
+                               <option *ngFor="let i of month">{{i}}</option>
+                           </select> -->
+    
+                     <!-- <div *ngIf="contactsForm.controls.userEmail.touched && contactsForm.controls.userEmail.errors != null" class="alert text-danger">must <select name="" id=""></select></div> -->
+                      </div>
+                      <div class="form-group group7">
+                        <!-- <select class="form-control">
+                            <option selected formControlName="userEmail" [(ngModel)]='newuser.years' required name="years">years</option>
+                             <option *ngFor="let i of years">{{i}}</option>
+                         </select> -->
+    
+                   <!-- <div *ngIf="contactsForm.controls.userEmail.touched && contactsForm.controls.userEmail.errors != null" class="alert text-danger">must <select name="" id=""></select></div> -->
+                    </div>
+                    <div class="clear-fix"></div>
+                    <label class="birthday">Gender</label><br>
+                    <!-- <div class="form-group group8">
+                      <input type="radio"  class="form-contol" formControlName="userEmail" [(ngModel)]='newuser.gender' required name="gender">female
+                      <input type="radio"  class="form-contol" formControlName="userEmail">male
+                      <input type="radio"  class="form-contol" formControlName="userEmail">custom -->
+                    <!-- <div *ngIf="contactsForm.controls.userEmail.touched && contactsForm.controls.userEmail.errors != null" class="alert text-danger">UserEmail invalid</div> -->
+                     <!-- </div> -->
+                     <p class="register-p">By clicking Sign Up, you agree to our Terms, Data Policy and Cookie Policy. You may receive SMS notifications from us and can opt out at any time.
+    
+                    </p>
+             <div class="form-button2">
+            <!-- <a routerLink='/home'> -->
+              <button  type="submit" class="btn-btn-info2" (click)="saveData()">Sign Up</button>
+            <!-- </a> -->
+            </div>
+            <p><a class="create-page">Create a Page</a> for a celebrity, band or business.</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footer-ul1">
+      <ul>
+        <li><a>English (UK)</a></li>
+        <li><a>العربية</a></li>
+        <li><a>francias</a></li>
+        <li><a>Italiano</a></li>
+        <li><a>Deutsch</a></li>
+        <li><a>pyccknn</a></li>
+        <li><a>Espanol</a></li>
+        <li><a>Bahasa Indonesia</a></li>
+        <li><a>Türkçe</a></li>
+        <li><a>Português(Brasil)</a></li>
+        <div class="clear-fix"></div>
+      </ul></div>
+      <div class="line"></div>
+      <div class="footer-ul2">
+        <ul>
+          <li><a>Sign Up</a></li>
+          <li><a>Log In</a></li>
+          <li><a>Messenger</a></li>
+          <li><a>Facebook Lite</a></li>
+          <li><a>Watch</a></li>
+          <li><a>People</a></li>
+          <li><a>Pages</a></li>
+          <li><a>Page Categories</a></li>
+          <li><a>Places</a></li>
+          <li><a>Games</a></li>
+          <li><a>Locations</a></li>
+          <li><a>Marketplace</a></li>
+          <li><a>Instagram</a></li>
+          <div class="clear-fix"></div>
+        </ul></div>
+        <div class="footer-ul3">
+          <ul>
+            <li><a>Local</a></li>
+            <li><a>Fundraisers</a></li>
+            <li><a>Services</a></li>
+            <li><a>About</a></li>
+            <li><a>Create ad</a></li>
+            <li><a>Create Page</a></li>
+            <li><a>Developers</a></li>
+            <li><a>Careers</a></li>
+            <li><a>Privacy</a></li>
+            <li><a>Cookies</a></li>
+            <li><a>Terms</a></li>
+            <div class="clear-fix"></div>
+          </ul></div>
+    </div>
+    

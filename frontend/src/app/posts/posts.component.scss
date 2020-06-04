@@ -1,0 +1,58 @@
+.lighter {
+    position: fixed;
+    background-color: rgba(0, 0, 0, .5);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index:6666666666;
+}
+.fa-window-close {
+    position: absolute;
+    background-color: white !important;
+    cursor: pointer;
+}
+.lighter-item {
+    background-size: cover;
+    width: 30%;
+    height: 300px;
+    margin-left: 30%;
+    margin-top: 10%;
+}
+.postsCreatedpart2{background-color: white; padding: 16px; color: rgb(100, 100, 100);}
+.create-post-h6{background-color: #e9ebee;padding: 1%;}
+.create-post{border:1px solid rgb(221, 220, 220);margin-top: 23px;}
+.create-post h6{margin: 8px}
+.post{background-color: white;padding-left: 1%;height: 108px;}
+.posts{margin-left: -7%;}
+.posts-img,.posts-textarea{float: left;height: 108px;}
+.posts-img{width: 5%;height: 20px;margin-right: 2%;}
+.posts-img img{width: 100%;height:100%;border-radius: 50%;}
+.clear-fix{clear:both}
+.posts-textarea{width:90%}
+.posts-textarea textarea{width: 100%;border:none;outline: none;}
+.line{
+    background-color: #cecece;
+    height: 1px;
+    width: 100%;
+    margin-left: 0%;
+}
+.buttons{background-color: white;padding: 15px}
+.upload-photo,.tag-friends,.feelings{float: left;width: 36%;margin-left: -1%;
+}
+.feelings img{width:5%;height: 15px;}
+.buttons button{
+    background-color:#e9ebee;
+    border:none;
+    outline: none;
+    border-radius: 5px;
+}
+.fa-user{color: #3b5998;}
+.fa-picture-o{color:green}
+.btn-post{background-color: #3b5998 !important;}
+.show{display:none};
+.row{margin-left: 0 !important;margin-right: 0 !important;}
+.close{
+    margin-left: -4%;
+    margin-top: 1%;
+}
